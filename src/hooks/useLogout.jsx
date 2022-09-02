@@ -12,17 +12,17 @@ export const useLogout = () => {
         setError(null);
         setIsPending(true);
 
-        signOut(appAuth).then(() => {
-            dispatch({ type: 'logout' })
-            setError(null);
-            setIsPending(false);
+        signOut(appAuth)
+            .then(() => {
+                dispatch({ type: "logout" });
+                setError(null);
+                setIsPending(false);
+            })
+            .catch((err) => {
+                setError(error.message);
+                setIsPending(false);
+            });
+    };
 
-        }).catch((err) => {
-            setError(error.message)
-            setIsPending(false);
-        })
-
-    }
-
-    return { error, isPending, logout }
-}
+    return { error, isPending, logout };
+};
