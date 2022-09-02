@@ -1,0 +1,27 @@
+.nav {
+    background-color: gray;
+    padding: 20px 50px;
+}
+
+.nav .list_nav {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+
+}
+
+.nav .tit {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav button {
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 203, 203);
+}
