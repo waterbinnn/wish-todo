@@ -1,4 +1,4 @@
-import { addDoc, collection, Transaction } from "firebase/firestore"
+import { addDoc, deleteDoc, collection, Transaction, doc } from "firebase/firestore"
 import { useReducer } from "react"
 import { appFireStore, timeStamp } from "../firebase/config"
 
@@ -17,6 +17,9 @@ const storeReducer = (state, action) => {
             return { isPending: false, document: action.payload, success: true, error: null }
         case 'error':
             return { isPending: false, document: null, success: false, error: action.payload }
+        case 'deleteDoc':
+            return { isPending: false, document: action.payload, success: true, error: null }
+
 
         default:
             return state
@@ -52,12 +55,16 @@ export const useFirestore = (transaction) => {
     }
 
     //컬렉션에서 문서를 제거
-    const deleteDocument = (id) => {
+    const deleteDocument = async (id) => {
 
+        dispatch({ type: "isPending" });
+        try {
+            const docRef = await deleteDoc(doc(colRef, id));
+            dispatch({ type: 'deleteDoc', payload: docRef });
+        } catch (e) {
+            dispatch({ type: 'error', payload: e.message });
+        }
     }
 
     return { addDocument, deleteDocument, response }
-
-
-
 }
