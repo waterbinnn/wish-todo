@@ -1,7 +1,8 @@
 input,
 textarea {
     font-family: 'Noto Sans KR', sans-serif;
-    -webkit-text-fill-color: #ffff;
+    -webkit-text-fill-color: rgb(229, 229, 229);
+    ;
 }
 
 input:-webkit-autofill,

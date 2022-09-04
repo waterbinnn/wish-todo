@@ -15,7 +15,7 @@
 
 .signup_form label {
     display: block;
-    margin: 30px 0;
+    margin: 30px 0 20px;
 }
 
 .signup_form input {
@@ -28,10 +28,8 @@
     font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
     border-radius: 2px;
-}
-
-.signup_form input:last-child {
-    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .signup_form input:focus {
@@ -71,16 +69,4 @@
     margin-top: -100px;
     font-size: 10px;
     color: rgb(255, 77, 77);
-}
-
-input {
-    font-family: 'Noto Sans KR', sans-serif;
-    -webkit-text-fill-color: #ffff;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
 }
