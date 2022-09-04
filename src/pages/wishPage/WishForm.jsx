@@ -39,7 +39,7 @@ function WishForm({ uid }) {
                     className={styles.wish_tit_text}
                     id="title"
                     type="text"
-                    maxlength="50"
+                    maxLength="50"
                     required
                     onChange={handleData}
                     value={title}
