@@ -48,7 +48,6 @@
     color: #ffff;
     font-weight: normal;
     font-size: 12px;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
     transition: all 200ms ease-in-out;
     white-space: nowrap;
     font-family: 'Noto Sans KR', sans-serif;
@@ -83,27 +82,12 @@
     content: '';
     display: block;
     position: absolute;
-    top: -3px;
     right: 7px;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     background-color: #772DF7;
     transform: rotate(45deg);
 }
-
-/* 
-.container {
-    max-width: 900px;
-    height: 900px;
-    background-image: url('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f3db340a-ef66-4e52-96ab-6d27ea591208/elec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220903T175600Z&X-Amz-Expires=86400&X-Amz-Signature=4b3cdf65a637e32adeb3770a9d9fd6b41053bf6fa7f246ddb53ea5e6ee52f7ed&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22elec.png%22&x-id=GetObject');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: -600px auto;
-    opacity: 0.4;
-    z-index: -999;
-}
- */
 
 
 .effect {
