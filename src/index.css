@@ -7,3 +7,27 @@ body {
 ul {
   list-style-type: none;
 }
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::placeholder {
+  -webkit-text-fill-color: rgb(81, 81, 81);
+  font-size: 11px;
+}
