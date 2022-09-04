@@ -25,7 +25,6 @@ function WishForm({ uid }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(title, text);
         addDocument({ uid, title, text });
     };
 
