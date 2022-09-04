@@ -1,0 +1,136 @@
+.container {
+    overflow-x: clip;
+    position: relative;
+}
+
+.talk_logout_tit {
+    width: 360px;
+    font-size: 46px;
+    /* color: #5922ff; */
+    color: rgba(83, 16, 177, 0.823);
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    font-family: 'Prata', serif;
+}
+
+.talk_logout_tit a {
+    color: rgb(83, 16, 177);
+    transition: all 200ms ease-in-out;
+}
+
+.talk_logout_tit a:hover {
+    color: rgba(122, 27, 255, 0.823);
+}
+
+.talk_logout_wish {
+    display: block;
+    color: rgba(83, 16, 177, 0.684);
+}
+
+/* 말풍선  */
+.wrapper_talk {
+    position: absolute;
+    margin: -6% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    gap: 22px;
+}
+
+.talk {
+    width: auto;
+    padding: 9px 16px;
+    background-color: #772DF7;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffff;
+    font-weight: normal;
+    font-size: 12px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+    transition: all 200ms ease-in-out;
+    white-space: nowrap;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.talk a {
+    color: #ffff;
+    cursor: pointer;
+}
+
+
+.talk.click {
+    animation: talk_size 1s infinite alternate;
+}
+
+.talk.click:hover {
+    animation-play-state: paused;
+}
+
+@keyframes talk_size {
+    from {
+        transform: rotateZ(4deg)
+    }
+
+    to {
+        transform: rotateZ(-4deg)
+    }
+}
+
+/* 말풍선꼭지  */
+.talk::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #772DF7;
+    transform: rotate(45deg);
+}
+
+/* 
+.container {
+    max-width: 900px;
+    height: 900px;
+    background-image: url('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f3db340a-ef66-4e52-96ab-6d27ea591208/elec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220903T175600Z&X-Amz-Expires=86400&X-Amz-Signature=4b3cdf65a637e32adeb3770a9d9fd6b41053bf6fa7f246ddb53ea5e6ee52f7ed&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22elec.png%22&x-id=GetObject');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: -600px auto;
+    opacity: 0.4;
+    z-index: -999;
+}
+ */
+
+
+.effect {
+    position: absolute;
+    top: -130%;
+    width: 1000px;
+    height: 1000px;
+    opacity: 30%;
+    z-index: -99;
+    animation: 볼움직임 50s linear infinite;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .wrapper_talk {
+        margin: 2% 50%;
+        gap: 30px;
+    }
+
+    .talk {
+        font-size: 16px;
+    }
+
+    .talk_logout_tit {
+        width: 500px;
+        font-size: 50px;
+    }
+}

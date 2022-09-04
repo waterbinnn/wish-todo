@@ -1,0 +1,209 @@
+input,
+textarea {
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-text-fill-color: #ffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.olaf_backImg {
+    display: block;
+    width: 350px;
+    background-image: url('../../components/olaf/img/olaf_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    animation: olafOpacity 1s ease-in;
+}
+
+@keyframes olafOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .olaf_backImg {
+        width: 500px;
+        padding: 61px;
+    }
+}
+
+
+/* Wish Form  */
+.container_wishform {
+    width: 80%;
+    color: #772DF7;
+    font-family: 'Prata', serif;
+    margin: 0 auto;
+}
+
+.wrapper_wishform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 360px;
+    margin: 0 auto;
+    border-bottom: 0.5px solid rgba(163, 163, 163, 0.433);
+}
+
+.title_wishform {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #772DF7;
+}
+
+.wish_title {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.wish_tit_text,
+.wish_text {
+    padding: 10px;
+    background-color: transparent;
+    border: 0.5px solid rgba(163, 163, 163, 0.433);
+    border-radius: 2px;
+    color: rgb(217, 217, 217);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.wish_tit_text {
+    height: 30px;
+}
+
+.wish_text {
+    width: 100%;
+    height: 70px;
+}
+
+.wrapper_wishtext {
+    display: flex;
+    white-space: nowrap;
+}
+
+.wishform_btn {
+    position: relative;
+    width: 20px;
+    top: -46px;
+    left: 90%;
+    font-size: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20%;
+    background-color: unset;
+    cursor: pointer;
+    transition: all .5s;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: fit-content;
+}
+
+.wishform_btn::after {
+    content: '복채';
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    font-size: 12px;
+    color: rgb(255, 215, 83);
+}
+
+.wishform_btn:hover,
+.wishform_btn:focus,
+.wishform_btn:active {
+    transform: scale(1.1);
+}
+
+/* wishlist */
+
+.wishlist_wrapper_title {
+    font-family: 'Prata', serif;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #772DF7;
+    text-align: center;
+}
+
+.wishlist_wrapper_sub_title {
+    font-family: 'Prata', serif;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #772df79c;
+    text-align: center;
+}
+
+.wrapper_wishlist {
+    width: 80%;
+    margin: 30px auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wishlist_item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+}
+
+.wishlist_title {
+    max-height: 30px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #b39afd;
+}
+
+.wrapper_text_btn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.wishlist_text {
+    width: fit-content;
+    padding: 10px;
+    background-color: #772DF7;
+    height: auto;
+    max-height: 90px;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-y: auto;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    color: rgb(229, 229, 229);
+
+}
+
+.delete_btn {
+    position: relative;
+    font-size: 15px;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(204, 170, 255);
+}
+
+.delete_btn:hover::after {
+    content: 'DELETE';
+    position: absolute;
+    font-size: 12px;
+    top: 13px;
+    display: block;
+    width: 60px;
+}

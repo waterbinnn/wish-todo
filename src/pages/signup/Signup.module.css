@@ -1,12 +1,16 @@
 .signup_form {
+    width: 90%;
     max-width: 360px;
-    margin: 60px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Prata', serif;
 }
 
 .signup_form legend {
-    font-size: 1.5em;
-    padding: 10px;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 20px
 }
 
 .signup_form label {
@@ -19,11 +23,64 @@
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.signup_form input:last-child {
+    margin-bottom: 5px;
+}
+
+.signup_form input:focus {
+    background-color: transparent;
 }
 
 .signup_form button {
     display: block;
-    width: 80%;
-    padding: 4px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 2px;
     margin: 50px auto 20px;
+    color: #b39afd;
+    background-color: transparent;
+    border: 1px solid #b39afd;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.signup_form button:hover,
+.signup_form button:active,
+.signup_form button:focus {
+    background-color: #b39afd;
+    color: black;
+}
+
+.loding_text {
+    display: block;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.error_text {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    margin-top: -100px;
+    font-size: 10px;
+    color: rgb(255, 77, 77);
+}
+
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-text-fill-color: #ffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
