@@ -4,6 +4,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import Wish from "./pages/wishPage/Wish";
 
 function App() {
     const { isAuthReady, user } = useAuthContext();
@@ -14,10 +15,7 @@ function App() {
                 <BrowserRouter>
                     <Nav />
                     <Routes>
-                        <Route
-                            path="/"
-                            element={user ? <Home /> : <Navigate replace={true} to="/login" />}
-                        />
+                        <Route path="/" element={<Home />} />
                         <Route
                             path="/login"
                             element={!user ? <Login /> : <Navigate replace={true} to="/" />}
@@ -25,6 +23,10 @@ function App() {
                         <Route
                             path="/signup"
                             element={!user ? <Signup /> : <Navigate replace={true} to="/" />}
+                        />
+                        <Route
+                            path="/wish"
+                            element={user ? <Wish /> : <Navigate replace={true} to="/login" />}
                         />
                     </Routes>
                 </BrowserRouter>

@@ -1,15 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import 'normalize.css'
-import { AuthContextProvider } from './context/AuthContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "normalize.css";
+import "reset.css";
+import "./index.css";
+import { AuthContextProvider } from "./context/AuthContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <AuthContextProvider>
-    <App />
-    </AuthContextProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <AuthContextProvider>
+            <App />
+        </AuthContextProvider>
+    </React.StrictMode>
 );

@@ -27,32 +27,23 @@ function Signup() {
     return (
         <form className={styles.signup_form} onSubmit={handleSubmit}>
             <fieldset>
-                <legend>회원가입</legend>
-                <label htmlFor="myEmail">email : </label>
+                <legend>SIGN UP</legend>
+                <label htmlFor="myEmail">Email : </label>
                 <input type="email" id="myEmail" value={email} onChange={handleData} required />
 
-                <label htmlFor="myPassword">password : </label>
-                <input
-                    type="password"
-                    id="myPassword"
-                    value={password}
-                    onChange={handleData}
-                    required
-                />
+                <label htmlFor="myPassword">Password : </label>
+                <input type="password" id="myPassword" value={password} onChange={handleData} />
 
-                <label htmlFor="myDisplayName">Nickname : </label>
-                <input
-                    type="text"
-                    id="myDisplayName"
-                    value={displayName}
-                    onChange={handleData}
-                    required
-                />
-
-                <button type="submit" className={styles.btn}>
-                    signup
-                </button>
+                <label htmlFor="myDisplayName">Name : </label>
+                <input type="text" id="myDisplayName" value={displayName} onChange={handleData} />
             </fieldset>
+            {!isPending && (
+                <button type="submit" className={styles.btn}>
+                    START
+                </button>
+            )}
+            {isPending && <strong className={styles.loding_text}>Loading...</strong>}
+            {error && <strong className={styles.error_text}>{error}</strong>}
         </form>
     );
 }
