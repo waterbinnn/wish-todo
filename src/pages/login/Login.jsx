@@ -5,7 +5,6 @@ import { useLogin } from "../../hooks/useLogin";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [errorMsg, setErrorMsg] = useState("");
 
     const { error, isPending, login } = useLogin();
 
@@ -20,9 +19,6 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         login(email, password);
-        if (error) {
-            setErrorMsg("없는 정보입니다.");
-        }
     };
 
     return (

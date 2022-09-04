@@ -1,9 +1,9 @@
+import { useAuthContext } from "../../hooks/useAuthContext";
+import useCollection from "../../hooks/useCollection";
 import styles from "./Wish.module.css";
 import WishForm from "./WishForm";
 import WishList from "./WishList";
 import Olaf from "../../components/olaf/Olaf";
-import { useAuthContext } from "../../hooks/useAuthContext";
-import useCollection from "../../hooks/useCollection";
 
 function Wish() {
     const { user } = useAuthContext();

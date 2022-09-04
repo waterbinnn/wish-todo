@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Nav from "./components/Nav";
 import { useAuthContext } from "./hooks/useAuthContext";
+import Nav from "./components/Nav";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
@@ -31,7 +31,7 @@ function App() {
                     </Routes>
                 </BrowserRouter>
             ) : (
-                "loading..."
+                "Loading..."
             )}
         </div>
     );
