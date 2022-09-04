@@ -29,13 +29,36 @@ function Signup() {
             <fieldset>
                 <legend>SIGN UP</legend>
                 <label htmlFor="myEmail">Email : </label>
-                <input type="email" id="myEmail" value={email} onChange={handleData} required />
+                <input
+                    type="email"
+                    id="myEmail"
+                    value={email}
+                    onChange={handleData}
+                    required
+                    placeholder="이메일 형식에 맞게 작성해 주세요."
+                />
 
                 <label htmlFor="myPassword">Password : </label>
-                <input type="password" id="myPassword" value={password} onChange={handleData} />
+                <input
+                    type="password"
+                    id="myPassword"
+                    value={password}
+                    onChange={handleData}
+                    minLength="6"
+                    maxLength="16"
+                    placeholder="6-16 글자 사이로 작성해 주세요."
+                />
 
                 <label htmlFor="myDisplayName">Name : </label>
-                <input type="text" id="myDisplayName" value={displayName} onChange={handleData} />
+                <input
+                    type="text"
+                    id="myDisplayName"
+                    value={displayName}
+                    onChange={handleData}
+                    minLength="2"
+                    maxLength="20"
+                    placeholder="두 글자 이상 작성해 주세요."
+                />
             </fieldset>
             {!isPending && (
                 <button type="submit" className={styles.btn}>
