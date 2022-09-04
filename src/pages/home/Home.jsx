@@ -8,7 +8,7 @@ import styles from "./Home.module.css";
 function Home() {
     const { user } = useAuthContext();
 
-    const [text, setText] = useState("내 눈을 바라봐 넌 행복해지고 ♡");
+    const [text, setText] = useState("내 눈을 바라봐 넌 행복해지고");
 
     function handleHover(e) {
         e.preventDefault();
