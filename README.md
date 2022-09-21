@@ -7,7 +7,8 @@
 2022.09.03-05 (UI, 기능구현)
 </p>
 
-<img src="올라프목업뉴.png">
+![올라프목업뉴](https://user-images.githubusercontent.com/96714788/191526502-0155c636-8d1b-44d5-94a8-d76d3cc7ea63.png)
+
 
 <br>
 <div align="center">
@@ -54,10 +55,10 @@ CSS로 올라프를 구현하고 애니메이션으로 시각적인 재미도 �
 <h1>☃️ 구현 UI</h1>
 </div>
 
-|                            0. 로그인                            |                           1. 로그아웃                            |
+|                            0. 로그인 전 메인화면                           |                           1. 회원가입                            |
 | :-------------------------------------------------------------: | :--------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/96714788/191214934-f3588412-3522-4659-bd09-182760459296.gif"/> | <img src="https://user-images.githubusercontent.com/96714788/191215039-220e9e5c-9e60-4f36-976c-a2c62bb5f711.gif" /> |
+| <img src="https://user-images.githubusercontent.com/96714788/191526758-ae6977c4-4924-4845-9199-4f5d13d4e044.gif"/> | <img src="https://user-images.githubusercontent.com/96714788/191526614-a861b6f6-3be1-474d-b2a3-0b9d3ffe5bdd.gif" /> |
 
-|                           2. 회원가입                           |                          3. 프로필설정                          |
+|                           2. 로그인                           |                          3. 소원작성/삭제                          |
 | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
-| <img src="https://user-images.githubusercontent.com/96714788/191215114-fdca9fd4-d57f-4780-86d3-c40e7e6dc851.gif"/> | <img src="https://user-images.githubusercontent.com/96714788/191215188-fe50d938-ef7a-4296-9fe4-7fc5acc62a5e.gif"/> |
+| <img src="https://user-images.githubusercontent.com/96714788/191527166-3b3183f2-bc89-4b2d-913d-202f56031e14.gif"/> | <img src="https://user-images.githubusercontent.com/96714788/191527365-51ab31e5-e8ba-4a68-8fef-de4fc57cfb21.gif"/> |
